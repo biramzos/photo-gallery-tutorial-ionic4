@@ -1,9 +1,25 @@
 <ion-header>
   <ion-toolbar>
     <ion-title>
-      Tab Three
+      Update
     </ion-title>
   </ion-toolbar>
+  <ion-back-button defaultHref="/database"></ion-back-button>
 </ion-header>
 
-<ion-content></ion-content>
+<ion-content>
+  <ion-item>
+    <ion-label >Name: </ion-label>
+    <ion-input type="text" name="name" [(ngModel)] = "name"></ion-input>
+  </ion-item>
+  <ion-item>
+    <ion-label >Password: </ion-label>
+    <ion-input type="text" name="password" [(ngModel)] = "password"></ion-input>
+  </ion-item>
+  <ion-item>
+    <ion-button (click)="updateUser()" style="background-color: skyblue;border-radius:20px; text-align: center;">Update</ion-button>
+  </ion-item>
+  <ion-item>
+    {{ result }}
+  </ion-item>
+</ion-content>

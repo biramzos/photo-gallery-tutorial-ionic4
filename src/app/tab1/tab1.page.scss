@@ -2,3 +2,24 @@
   max-height: 35vh;
   overflow: hidden;
 }
+
+.center {
+  margin-left: auto;
+  margin-right: auto;
+  display: block;
+  text-align: center;
+}
+
+
+th{
+  background-color: skyblue;
+}
+
+table{
+  margin-left:5px;
+  margin-right: 5px;
+}
+
+.border{
+  border:1px solid skyblue;
+}

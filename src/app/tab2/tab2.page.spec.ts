@@ -4,23 +4,23 @@ import { async, ComponentFixture, TestBed } from '@angular/core/testing';
 import { IonicStorageModule } from '@ionic/storage';
 import { Camera } from '@ionic-native/camera/ngx';
 
-import { Tab2Page } from './tab2.page';
+import { InsertPage } from './tab2.page';
 
-describe('Tab2Page', () => {
-  let component: Tab2Page;
-  let fixture: ComponentFixture<Tab2Page>;
+describe('InsertPage', () => {
+  let component: InsertPage;
+  let fixture: ComponentFixture<InsertPage>;
 
   beforeEach(async(() => {
     TestBed.configureTestingModule({
       imports: [IonicStorageModule.forRoot()],
       providers: [Camera],
-      declarations: [Tab2Page],
+      declarations: [InsertPage],
       schemas: [CUSTOM_ELEMENTS_SCHEMA],
     }).compileComponents();
   }));
 
   beforeEach(() => {
-    fixture = TestBed.createComponent(Tab2Page);
+    fixture = TestBed.createComponent(InsertPage);
     component = fixture.componentInstance;
     fixture.detectChanges();
   });
